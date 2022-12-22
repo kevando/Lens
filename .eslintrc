@@ -1,0 +1,161 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+     "ecmaVersion": 6, // Required in order for const to work
+     "ecmaFeatures": {
+        "impliedStrict": true,
+        "globalReturn": true
+     }
+  },
+  "rules": {
+     "indent": [
+        "error",
+        4,
+        {
+           "SwitchCase": 1
+        }
+     ],
+     "brace-style": [
+        "error",
+        "1tbs"
+     ],
+     "quotes": [
+        "error",
+        "double"
+     ],
+     "semi": [
+        "error",
+        "always"
+     ],
+     "space-in-parens": [
+        "error",
+        "never"
+     ],
+     "space-before-function-paren": [
+        "error",
+        "never"
+     ],
+     "space-before-blocks": [
+        "error",
+        "always"
+     ],
+     "keyword-spacing": [
+        "error",
+        {
+           "before": true,
+           "after": true
+        }
+     ],
+     "max-len": [
+        "error",
+        {
+           "code": 500,
+           "tabWidth": 4,
+           "ignoreUrls": true,
+           "ignoreComments": true
+        }
+     ],
+     "no-unused-vars": [ // disallow declaration of variables that are not used in the code
+        "error",
+        {
+           "vars": "all",
+           "args": "none" // allow for function arguments - helps to make code more self-documenting
+        }
+     ],
+     "no-use-before-define": [ // disallow use of variables before they are defined
+        "error",
+        {
+           "functions": false // allow use of functions before they are defined (this is valid)
+        }
+     ],
+     "curly": [ // require curly braces for all control statements
+        "error",
+        "all"
+     ],
+     "dot-location": [
+        "error",
+        "property"
+     ]
+  },
+  "globals": {
+     "module": false,
+     "process": false,
+     "window": false,
+     "define": false,
+     "global": false,
+     "self": false,
+     "getCoreVersion": false,
+     "getFileVersion": false,
+     "getScenariumVersion": false,
+     "getTargetOS": false,
+     "print": false,
+     "vec2": false,
+     "vec3": false,
+     "vec4": false,
+     "mat2": false,
+     "mat2Add": false,
+     "mat2Div": false,
+     "mat2Mul": false,
+     "mat2Sub": false,
+     "mat3": false,
+     "mat3Add": false,
+     "mat3Div": false,
+     "mat3Mul": false,
+     "mat3Sub": false,
+     "determinantMat3": false,
+     "inverseMat3": false,
+     "matrixCompMultMat3": false,
+     "outerProductMat3": false,
+     "transposeMat3": false,
+     "mat4": false,
+     "mat4Add": false,
+     "mat4Div": false,
+     "mat4Mul": false,
+     "mat4Sub": false,
+     "mat4Vec4Mul": false,
+     "determinantMat4": false,
+     "inverseMat4": false,
+     "matrixCompMultMat4": false,
+     "outerProductMat4": false,
+     "transposeMat4": false,
+     "eulerAngleX": false,
+     "eulerAngleY": false,
+     "eulerAngleYXZ": false,
+     "eulerAngleZ": false,
+     "extractEulerAngleXYZ": false,
+     "yawPitchRoll": false,
+     "quat": false,
+     "fromEuler": false,
+     "quatFromAngleAxis": false,
+     "slerp": false,
+     "toEuler": false,
+     "script": false,
+     "getTime": false,
+     "getDeltaTime": false,
+     "isNull": false,
+     "MachineLearning": false,
+     "VideoStatus": false,
+     "TWEEN": false,
+     "MeshBuilder": false,
+     "MeshTopology": false,
+     "MeshIndexType": false,
+     "ManipulateType": false,
+     "StretchMode": false,
+     "DeviceTrackingMode": false,
+     "CullMode": false,
+     "LocationProximityStatus": false,
+     "LookAtComponent": false,
+     "AttachmentPointType": false,
+     "LayerSet": false,
+     "ScreenRegionType": false,
+     "Rect": false,
+     "Camera": false,
+     "Float32Array": false,
+     "Uint8Array": false,
+     "TensorMath": false,
+     "scene": false,
+     "ProceduralTextureProvider": false,
+     "Colorspace": false,
+     "MeshClassificationFormat": false
+  }
+}
