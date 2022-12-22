@@ -1,2 +1,8 @@
-# lens
-Resources (mostly scripts) for producing AR lenses with Lens Studio
+# 👻 
+
+### Run this before committing your code
+
+```
+eslint . --fix
+```
+
